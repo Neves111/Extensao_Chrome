@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Helper</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../../icons/icon48.png" alt="Logo" class="logo">
+            <h1>Dev Helper</h1>
+        </div>
+        <div class="card">
+            <h2>Contador de Abas</h2>
+            <p>Você tem <strong id="tab-count">...</strong> abas abertas nesta janela.</p>
+        </div>
+        <div class="card">
+            <h2>Gerador de Senha</h2>
+            <div class="password-display">
+                <input type="text" id="password-output" readonly placeholder="Sua senha segura aqui...">
+                <button id="copy-button" title="Copiar para a área de transferência">📋</button>
+            </div>
+            <button id="generate-button" class="btn">Gerar Nova Senha</button>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>

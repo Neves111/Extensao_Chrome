@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Helper - Extensão para Chrome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Dev Helper</h1>
+            <p>Uma extensão para Chrome (Manifest V3) que ajuda no seu dia a dia.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="about">
+            <div class="screenshot-container">
+    <img src="assets/popup-screenshot.png" alt="Screenshot do popup da extensão Dev Helper" class="screenshot">
+            </div>
+            <div class="features">
+                <h2>Funcionalidades</h2>
+                <ul>
+                    <li>✅ <strong>Contador de Abas:</strong> Veja quantas abas estão abertas na janela atual diretamente no ícone.</li>
+                    <li>🔐 <strong>Gerador de Senhas:</strong> Crie senhas fortes e seguras com um único clique.</li>
+                    <li>🔗 <strong>Destacador de Links:</strong> Em sites de desenvolvimento, todos os links são destacados para melhor visibilidade.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="installation">
+            <h2>Instalação</h2>
+            <div class="install-steps">
+                <h3>Opção 1: Instalar via Release (Recomendado)</h3>
+                <p>
+                    <a href="https://github.com/Neves111/Extensao_Chrome/releases" class="btn">Baixar a última versão (.zip)</a>
+                </p>
+                <ol>
+                    <li>Baixe o arquivo <code>dev-helper-v1.0.0.zip</code> da página de Releases.</li>
+                    <li>Descompacte o arquivo.</li>
+                    <li>Abra o Chrome, acesse <code>chrome://extensions</code>.</li>
+                    <li>Ative o <strong>"Modo do desenvolvedor"</strong> no canto superior direito.</li>
+                    <li>Clique em <strong>"Carregar sem compactação"</strong> e selecione a pasta que você descompactou.</li>
+                </ol>
+
+                <h3>Opção 2: Instalar para Desenvolvimento</h3>
+                 <ol>
+                    <li>Clone o repositório do GitHub.</li>
+                    <li>Abra o Chrome, acesse <code>chrome://extensions</code>.</li>
+                    <li>Ative o <strong>"Modo do desenvolvedor"</strong>.</li>
+                    <li>Clique em <strong>"Carregar sem compactação"</strong> e selecione a pasta raiz do projeto clonado.</li>
+                </ol>
+            </div>
+        </section>
+        
+        <section class="permissions">
+            <h2>Permissões Necessárias</h2>
+            <p>Esta extensão solicita o mínimo de permissões para funcionar:</p>
+            <ul>
+                <li><code>storage</code>: Para salvar configurações futuras (atualmente não utilizado, mas reservado).</li>
+                <li><code>tabs</code>: Para contar o número de abas abertas na janela atual.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>Projeto desenvolvido para o Bootcamp. Licença MIT.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Dev Helper",
+  "version": "1.0.0",
+  "description": "Uma extensão simples que conta abas e gera senhas seguras.",
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "action": {
+    "default_title": "Dev Helper",
+    "default_popup": "src/popup/popup.html"
+  },
+  "background": {
+    "service_worker": "src/background/service-worker.js"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://developer.chrome.com/*"],
+      "js": ["src/content/content.js"],
+      "css": [],
+      "run_at": "document_idle"
+    }
+  ],
+  "author": "Neves111"
+}
