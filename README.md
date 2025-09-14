@@ -1,4 +1,4 @@
-# Dev Helper - Extensão para Chrome (Manifest V3)
+# Dev Helper - Extensão para Chrome
 
 ![Screenshot da extensão Dev Helper mostrando o popup](docs/assets/popup-screenshot.png)
 ![Versão](https://img.shields.io/badge/version-1.0.0-blue)
